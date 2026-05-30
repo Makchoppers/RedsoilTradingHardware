@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Red Soil Trading</title>
+  <link rel="stylesheet" href="style.css">
+ <link rel="shortcut icon" href="RSOILLOGO.png" type="image/png" />
+
+  
+</head>
+<body>
+<div class="Product-body">
+  <header class="top-bar">
+<div class="top-content">
+  <div class="search-logo-wrapper">
+    <div class="logo-container">
+      <img src="RSOILLOGO.png" alt="Red Soil Trading Logo" class="logo">
+    </div>
+
+    <div class="center-search">
+      <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search.." class="search-input">
+        <select class="category-select">
+          <option>Category ▼</option>
+        </select>
+       <button id="searchBtn" class="search-btn">🔍</button>
+      </div>
+    </div>
+  </div>
+</div>
+</header>
+
+  <nav class="nav-bar">
+    <div class="nav-left">
+      <a href="index.html">Home</a>
+      <a href="Product.html" class="active">Products</a>
+      <a href="Contact.html">Contact</a>
+      <a href="about.html">About</a>
+      <a href="Review.html">Reviews</a>
+    </div>
+    <div class="nav-right">
+      Store Status: <span class="store-open">OPEN</span>
+    </div>
+  </nav>
+  <div class="banner1">
+    <h1>PRODUCT CATALOGUE</h1>
+    <nav>
+      <ul>
+          <li><a href="#">Home</a></li>
+          <li>/</li>
+          <li><a href="#">Product</a></li>
+          </ul>
+  </nav>
+</div>
+  <div class="container">
+   <div class="search-filter">
+        <h3>SEARCH FILTER</h3>
+        <h4>By Category</h4>
+        <label><input type="checkbox"> Tools</label>
+        <label><input type="checkbox"> Paint</label>
+        <label><input type="checkbox"> Plumbing</label>
+        <label><input type="checkbox"> Electrical</label>
+        <div class="more-link">More
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                <path d="m7.247 11.14 3.726-3.726A.5.5 0 0 0 11 7.5V2a.5.5 0 0 0-1 0v5.5H4a.5.5 0 0 0-.708.708l3.726 3.726a.5.5 0 0 0 .708 0z"/>
+            </svg>
+        </div>
+
+        <hr>
+
+        <h4>Sub-Category</h4>
+        <label><input type="checkbox"> Paint Color</label>
+        <label><input type="checkbox"> Latex Color</label>
+        <label><input type="checkbox"> Primers</label>
+        <label><input type="checkbox"> Interior Paint</label>
+
+        <hr>
+
+        <h4>Price Range</h4>
+        <div class="price-range">
+            <label>₱</label>
+            <input type="text">
+            <label>to</label>
+            <label>₱</label>
+            <input type="text">
+        </div>
+    </div>
+  <div class="main">
+       <div class="options-bar">
+        <div class="view-options">
+            <button class="grid-icon" title="Grid View">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-grid-3x3-gap-fill" viewBox="0 0 16 16">
+                    <path d="M1 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V2zM1 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V7zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V7zM1 12a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-2z"/>
+                </svg>
+            </button>
+            <button class="list-icon" title="List View">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list-ul" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm-3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                </svg>
+            </button>
+        </div>
+        <div class="sort-by">
+            <label for="sort">Sort by</label>
+            <select id="sort">
+                <option value="featured" selected>Featured</option>
+                <option value="price-low-high">Price: Low to High</option>
+                <option value="price-high-low">Price: High to Low</option>
+                <option value="name-az">Name: A-Z</option>
+                <option value="name-za">Name: Z-A</option>
+            </select>
+        </div>
+    </div>
+         <div class="product-grid">
+    
+        <div class="product-card"
+        data-type="PPR"
+        data-title="PPR COUPLING"
+        data-material="PPR"
+        data-description="Fitting used to join two PPR pipes of the same diameter in a straight line,"
+        data-price="₱ 10 - ₱ 25"
+        data-stock="100 in stock!"
+        data-image="images/pvc-elbow.jpg">
+            <div class="image-container">
+                <div class="stock-label in-stock">In Stock!</div>
+                <img src="ASSETS/PPRCOUPLING.png" alt="PPRS">
+            </div>
+            <h3 class="product-title">PPR COUPLING</h3>
+            <p class="product-price">₱ 10 - ₱ 25</p>
+        </div>
+
+        <div class="product-card"
+        data-type="PPR"
+        data-title="PPR REDUCER"
+        data-material="PPR"
+        data-description="Fitting used to connect 2 different ppr sizes,"
+        data-price="₱ 20 - ₱ 50"
+        data-stock="20 in stock!"
+        data-image="images/pvc-elbow.jpg">
+            <div class="image-container">
+                <div class="stock-label in-stock">In Stock!</div>
+                <img src="ASSETS/PPRREDUCER.png" alt="PPRS">
+            </div>
+            <h3 class="product-title">PPR REDUCER</h3>
+            <p class="product-price">₱ 20 - ₱ 50</p>
+        </div>
+
+        <div class="product-card"
+         data-type="PPR"
+        data-title="PPR FEMALE ADAPTOR"
+        data-material="PPR"
+        data-description=" Use for a straight transition from polypropylene pipe installation to an male thread metal fitting"
+        data-price="₱ 130 - ₱ 250"
+        data-stock="20 in stock!"
+        data-image="images/pvc-elbow.jpg">
+            <div class="image-container">
+                <div class="stock-label in-stock-paint">In Stock!</div>
+                <img src="ASSETS/PPRMADAPTOR.png" alt="ALPHA TINTING COLOR">
+            </div>
+            <h3 class="product-title">PPR FEMALE ADAPTOR</h3>
+            <p class="product-price">₱ 130 - ₱ 250</p>
+        </div>
+
+        <div class="product-card"
+        data-type="PPR"
+        data-title="PPR TEE"
+        data-material="PPR"
+        data-description="use to branch water supply lines, ensuring a steady flow of hot and cold water to various fixtures and appliances in homes"
+        data-price="₱ 30 - ₱ 120"
+        data-stock="20 in stock!"
+        data-image="images/pvc-elbow.jpg">
+            <div class="image-container">
+                <div class="stock-label out-of-stock">In Stock!</div>
+                <img src="ASSETS/PPRTEE.png" alt="ALPHA TINTING COLOR">
+            </div>
+            <h3 class="product-title">PPR TEE</h3>
+            <p class="product-price">₱ 30 - ₱ 120</p>
+        </div>
+         <div class="product-card"
+        data-type="PPR"
+        data-title="PPR MALE ADAPTOR"
+        data-material="PPR"
+        data-description=" Use for a straight transition from polypropylene pipe installation to an female thread metal fitting or valves"
+        data-price="₱ 130 - ₱ 250"
+        data-stock="20 in stock!"
+        data-image="images/pvc-elbow.jpg">
+            <div class="image-container">
+                <div class="stock-label out-of-stock">In Stock!</div>
+                <img src="ASSETS/PPRMALE.png" alt="ALPHA TINTING COLOR">
+            </div>
+            <h3 class="product-title">PPR MALE ADAPTOR</h3>
+            <p class="product-price">₱ 130 - ₱ 250</p>
+        </div>
+          <div class="product-card"
+        data-type="PPR"
+        data-title="PPR MALE ELBOW"
+        data-material="PPR"
+        data-description="Use to create a 90-degree change in direction in a PPR piping system while providing a male threaded connection at one of its ends."
+        data-price="₱ 80 - ₱ 170"
+        data-stock="30 in stock!"
+        data-image="images/pvc-elbow.jpg">
+            <div class="image-container">
+                <div class="stock-label out-of-stock">In Stock!</div>
+                <img src="ASSETS/PPRMELBOW.png" alt="ALPHA TINTING COLOR">
+            </div>
+            <h3 class="product-title">PPR MALE ELBOW</h3>
+            <p class="product-price">₱ 80 - ₱ 170</p>
+        </div>
+        <div class="product-card"
+        data-type="PPR"
+        data-title="PPR ELBOW"
+        data-material="PPR"
+        data-description="a type of pipe fitting that is used to change the direction of flow in a piping system"
+        data-price="₱ 10 - ₱ 20"
+        data-stock="40 in stock!"
+        data-image="images/pvc-elbow.jpg">
+            <div class="image-container">
+                <div class="stock-label out-of-stock">In Stock!</div>
+                <img src="ASSETS/PPRELBOW.png" alt="ALPHA TINTING COLOR">
+            </div>
+            <h3 class="product-title">PPR ELBOW</h3>
+            <p class="product-price">₱ 10 - ₱ 20</p>
+        </div>
+         <div class="product-card"
+        data-type="PPR"
+        data-title="PPR CAP"
+        data-material="PPR"
+        data-description="a type of pipe fitting that is used to cover pipes"
+        data-price="₱ 8 - ₱ 18"
+        data-stock="80 in stock!"
+        data-image="images/pvc-elbow.jpg">
+            <div class="image-container">
+                <div class="stock-label out-of-stock">In Stock!</div>
+                <img src="ASSETS/PPRCAP.png" alt="ALPHA TINTING COLOR">
+            </div>
+            <h3 class="product-title">PPR CAP</h3>
+            <p class="product-price">₱ 8 - ₱ 18</p>
+        </div>
+          <div class="product-card"
+        data-type="PPR"
+        data-title="PE ELBOW"
+        data-material="PE"
+        data-description="a type of fitting used to connect two pipes at an angle"
+        data-price="₱ 72 - ₱ 175"
+        data-stock="20 in stock!"
+        data-image="images/pvc-elbow.jpg">
+            <div class="image-container">
+                <div class="stock-label out-of-stock">In Stock!</div>
+                <img src="ASSETS/PEELBOW.png" alt="ALPHA TINTING COLOR">
+            </div>
+            <h3 class="product-title">PE ELBOW</h3>
+            <p class="product-price">₱ 72 - ₱ 120</p>
+        </div>
+              <div class="product-card"
+        data-type="PPR"
+        data-title="PE REDUCER"
+        data-material="PE"
+        data-description="a type of fitting used to connect two pipes with different sizes"
+        data-price="₱ 60 - ₱ 100"
+        data-stock="20 in stock!"
+        data-image="images/pvc-elbow.jpg">
+            <div class="image-container">
+                <div class="stock-label out-of-stock">In Stock!</div>
+                <img src="ASSETS/PERED.png" alt="ALPHA TINTING COLOR">
+            </div>
+            <h3 class="product-title">PE REDUCER</h3>
+            <p class="product-price">₱ 60 - ₱ 100</p>
+        </div>
+              <div class="product-card"
+        data-type="PPR"
+        data-title="PE MALE COUPLING"
+        data-material="PE"
+        data-description="a type of fitting used to connect female threaded pipes and valves"
+        data-price="₱ 65 - ₱ 110"
+        data-stock="20 in stock!"
+        data-image="images/pvc-elbow.jpg">
+            <div class="image-container">
+                <div class="stock-label out-of-stock">In Stock!</div>
+                <img src="ASSETS/PE MCOUP.png" alt="ALPHA TINTING COLOR">
+            </div>
+            <h3 class="product-title">PE MALE COUPLING</h3>
+            <p class="product-price">₱ 65 - ₱ 110</p>
+        </div>
+        <div class="product-card"
+        data-type="PPR"
+        data-title="PE TEE"
+        data-material="PE"
+        data-description="A T-shaped fitting made from polyethylene, used to create a branch in a PE pipe system"
+        data-price="₱ 125 - ₱ 220"
+        data-stock="20 in stock!"
+        data-image="images/pvc-elbow.jpg">
+            <div class="image-container">
+                <div class="stock-label out-of-stock">In Stock!</div>
+                <img src="ASSETS/PE TEE.png" alt="ALPHA TINTING COLOR">
+            </div>
+            <h3 class="product-title">PE TEE</h3>
+            <p class="product-price">₱ 125 - ₱ 220</p>
+        </div>
+        <div class="product-card"
+        data-type="PPR"
+        data-title="PVC COUPLING"
+        data-material="PVC"
+        data-description="Use to connect straight pvc pipes"
+        data-price="₱ 8 - ₱ 15"
+        data-stock="20 in stock!"
+        data-image="images/pvc-elbow.jpg">
+            <div class="image-container">
+                <div class="stock-label out-of-stock">In Stock!</div>
+                <img src="ASSETS/PVC COUP.png" alt="ALPHA TINTING COLOR">
+            </div>
+            <h3 class="product-title">PVC COUPLING</h3>
+            <p class="product-price">₱ 8 - ₱ 15</p>
+        </div>
+         <div class="product-card"
+        data-type="PPR"
+        data-title="PVC CAP"
+        data-material="PVC"
+        data-description="Use to cover straight pvc pipes"
+        data-price="₱ 10 - ₱ 20"
+        data-stock="20 in stock!"
+        data-image="images/pvc-elbow.jpg">
+            <div class="image-container">
+                <div class="stock-label out-of-stock">In Stock!</div>
+                <img src="ASSETS/PVCCAP.png" alt="ALPHA TINTING COLOR">
+            </div>
+            <h3 class="product-title">PVC COUPLING</h3>
+            <p class="product-price">₱ 10 - ₱ 20</p>
+        </div>
+        <div class="product-card"
+        data-type="PPR"
+        data-title="PVC TEE"
+        data-material="PVC"
+        data-description=" used to create a branch in a pvc pipe system"
+        data-price="₱ 18 - ₱ 25"
+        data-stock="20 in stock!"
+        data-image="images/pvc-elbow.jpg">
+            <div class="image-container">
+                <div class="stock-label out-of-stock">In Stock!</div>
+                <img src="ASSETS/PVCTEE.png" alt="ALPHA TINTING COLOR">
+            </div>
+            <h3 class="product-title">PVC TEE</h3>
+            <p class="product-price">₱ 18 - ₱ 25</p>
+        </div>
+         <div class="product-card"
+        data-type="PPR"
+        data-title="PVC GATE VALVE"
+        data-material="PVC"
+        data-description=" used to create a branch in a pvc pipe system"
+        data-price="₱ 50 - ₱ 150"
+        data-stock="20 in stock!"
+        data-image="images/pvc-elbow.jpg">
+            <div class="image-container">
+                <div class="stock-label out-of-stock">In Stock!</div>
+                <img src="ASSETS/PVCGATEVALVE.png" alt="ALPHA TINTING COLOR">
+            </div>
+            <h3 class="product-title">PVC GATE VALVE</h3>
+            <p class="product-price">₱ 50 - ₱ 150</p>
+        </div>
+         <div class="product-card"
+        data-type="paint"
+        data-title="A-PLUS QDE EMERALD GREEN"
+        data-use="For wood and metal"
+        data-paint-type="Quick Drying Enamel"
+        data-color=#00674f
+        data-description="  is a type of alkyd-based paint known for its fast drying time and durability, offering a tough, glossy finish on wood and metal surfaces"
+        data-price="₱ 50 - ₱ 150"
+        data-stock="20 in stock!"
+        data-image="images/pvc-elbow.jpg">
+            <div class="image-container">
+                <div class="stock-label out-of-stock">In Stock!</div>
+                <img src="ASSETS/QDE EGREEN.png" alt="ALPHA TINTING COLOR">
+            </div>
+            <h3 class="product-title">A-PLUS QDE EMERALD GREEN</h3>
+            <p class="product-price">₱ 64 - ₱ 650</p>
+        </div>
+          <div class="product-card"
+        data-type="paint"
+        data-title="A-PLUS QDE MAPLE"
+        data-use="For wood and metal"
+        data-paint-type="Quick Drying Enamel"
+        data-color=#BB9351
+        data-description="is a type of alkyd-based paint known for its fast drying time and durability, offering a tough, glossy finish on wood and metal surfaces"
+        data-price="₱ 50 - ₱ 150"
+        data-stock="20 in stock!"
+        data-image="images/pvc-elbow.jpg">
+            <div class="image-container">
+                <div class="stock-label out-of-stock">In Stock!</div>
+                <img src="ASSETS/QDE MAPLE.png" alt="ALPHA TINTING COLOR">
+            </div>
+            <h3 class="product-title">A-PLUS MAPLE</h3>
+            <p class="product-price">₱ 72 - ₱ 680</p>
+        </div>
+        <div class="product-card"
+        data-type="paint"
+        data-title="A-PLUS QDE YELLOW"
+        data-use="For wood and metal"
+        data-paint-type="Quick Drying Enamel"
+        data-color=#FFDE21
+        data-description="is a type of alkyd-based paint known for its fast drying time and durability, offering a tough, glossy finish on wood and metal surfaces"
+        data-price="₱ 50 - ₱ 150"
+        data-stock="20 in stock!"
+        data-image="images/pvc-elbow.jpg">
+            <div class="image-container">
+                <div class="stock-label out-of-stock">In Stock!</div>
+                <img src="ASSETS/QDEYELLOW.png" alt="ALPHA TINTING COLOR">
+            </div>
+            <h3 class="product-title">A-PLUS QDE YELLOW</h3>
+            <p class="product-price">₱ 60 - ₱ 650</p>
+        </div>
+         <div class="product-card"
+        data-type="paint"
+        data-title="A-PLUS QDE ORANGE"
+        data-use="For wood and metal"
+        data-paint-type="Quick Drying Enamel"
+        data-color=#FF4D00
+        data-description="is a type of alkyd-based paint known for its fast drying time and durability, offering a tough, glossy finish on wood and metal surfaces"
+        data-price="₱ 50 - ₱ 150"
+        data-stock="20 in stock!"
+        data-image="images/pvc-elbow.jpg">
+            <div class="image-container">
+                <div class="stock-label out-of-stock">In Stock!</div>
+                <img src="ASSETS/QDEYELLOW.png" alt="ALPHA TINTING COLOR">
+            </div>
+            <h3 class="product-title">A-PLUS QDE ORANGE</h3>
+            <p class="product-price">₱ 65 - ₱ 670</p>
+        </div>
+               <div class="product-card"
+        data-type="paint"
+        data-title="DAVIES ACRYLIC COLOR TOULODINE RED"
+        data-use="For Stone and Concrete"
+        data-paint-type="ACRYLIC COLOR"
+        data-color=#EC012C 
+        data-description="concentrated water-based, acrylic colorants for water-based paints "
+        data-price="₱ 50 - ₱ 150"
+        data-stock="20 in stock!"
+        data-image="images/pvc-elbow.jpg">
+            <div class="image-container">
+                <div class="stock-label out-of-stock">In Stock!</div>
+                <img src="ASSETS/ACRYTRED.png" alt="ALPHA TINTING COLOR">
+            </div>
+            <h3 class="product-title">DAVIES ACRY COLOR TOULODINE RED</h3>
+            <p class="product-price">₱ 18 - ₱ 65</p>
+        </div>
+             <div class="product-card"
+        data-type="paint"
+        data-title="ALPHA ACRYLIC COLOR PTHALO GREEN"
+        data-use="For Stone and Concrete"
+        data-paint-type="ACRYLIC COLOR"
+        data-color=#123524 
+        data-description="concentrated water-based, acrylic colorants for water-based paints "
+        data-price="₱ 50 - ₱ 150"
+        data-stock="20 in stock!"
+        data-image="images/pvc-elbow.jpg">
+            <div class="image-container">
+                <div class="stock-label out-of-stock">In Stock!</div>
+                <img src="ASSETS/ACRYPGREEN.png" alt="ALPHA TINTING COLOR">
+            </div>
+            <h3 class="product-title">ALPHA ACRY COLOR PTHALO GREEN</h3>
+            <p class="product-price">₱ 20 - ₱ 70</p>
+        </div>
+              <div class="product-card"
+        data-type="paint"
+        data-title="ALPHA ACRYLIC COLOR BURNT UMBER"
+        data-use="For Stone and Concrete"
+        data-paint-type="ACRYLIC COLOR"
+        data-color=#8a3324 
+        data-description="concentrated water-based, acrylic colorants for water-based paints "
+        data-price="₱ 50 - ₱ 150"
+        data-stock="20 in stock!"
+        data-image="images/pvc-elbow.jpg">
+            <div class="image-container">
+                <div class="stock-label out-of-stock">In Stock!</div>
+                <img src="ASSETS/ACRYBURNTUMBER.png" alt="ALPHA TINTING COLOR">
+            </div>
+            <h3 class="product-title">ALPHA ACRY COLOR BURNT UMBER</h3>
+            <p class="product-price">₱ 22 - ₱ 74</p>
+        </div>
+               <div class="product-card"
+        data-type="paint"
+        data-title="ALPHA ACRYLIC COLOR RAW SIENNA"
+        data-use="For Stone and Concrete"
+        data-paint-type="ACRYLIC COLOR"
+        data-color=#d68a59  
+        data-description="concentrated water-based, acrylic colorants for water-based paints "
+        data-price="₱ 50 - ₱ 150"
+        data-stock="20 in stock!"
+        data-image="images/pvc-elbow.jpg">
+            <div class="image-container">
+                <div class="stock-label out-of-stock">In Stock!</div>
+                <img src="ASSETS/ACRYRAWSIENNA.png" alt="ALPHA TINTING COLOR">
+            </div>
+            <h3 class="product-title">ALPHA ACRY COLOR RAW SIENNA</h3>
+            <p class="product-price">₱ 25 - ₱ 80</p>
+        </div>
+        <div class="product-card"
+        data-type="lightBulb"
+        data-title="ECOLUM LIGHT BULB 3W"
+        data-use="For Stone and Concrete"
+        data-paint-type="ACRYLIC COLOR"
+        data-color=#d68a59  
+        data-description="Is a type of electric light that uses light-emitting diodes to produce illumination."
+        data-price="₱ 50 - ₱ 150"
+        data-stock="20 in stock!"
+        data-image="images/pvc-elbow.jpg">
+            <div class="image-container">
+                <div class="stock-label out-of-stock">In Stock!</div>
+                <img src="ASSETS/ECOLUM 3W.png" alt="ALPHA TINTING COLOR">  
+            </div>
+            <h3 class="product-title">ECOLUM LIGHT BULB 3W</h3>
+            <p class="product-price">₱ 60</p>
+        </div>
+        
+    </div>
+    <div style="text-align: center; margin-top: 20px;">
+    <button id="showMoreBtn" style="display: none;">Show More</button>
+</div>
+    <div class="pagination">
+  <a href="#" class="page-number active">1</a>
+  <a href="#" class="page-number">2</a>
+  <a href="#" class="page-number">3</a>
+  <a href="#" class="page-number">4</a>
+    <a href="#" class="page-number">...</a>
+    <button class="prev" id="prev">&lt;</button>
+    <span class="page-numbers" id="page-numbers"></span> 
+    <button class="next" id="next">&gt;</button> 
+</div>
+  </div>
+</div>
+
+</div>
+<footer>
+    </footer>
+<div id="productModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <div class="modal-image">
+      <img id="modalImage" src="" alt="Product Image">
+    </div>
+    <div class="product-details">
+     <h2 id="modalTitle"></h2>
+
+
+      <!-- Paint-specific fields -->
+      <div class="paint-fields">
+        <h3 class="specification-title">Specification</h3>
+        <div class="specification-item"><strong>USE:</strong> <span id="modalUse"></span></div>
+        <div class="specification-item"><strong>TYPE:</strong> <span id="modalType"></span></div>
+        <div class="size-color-container">
+        <div class="size-container"><strong>SIZE:</strong><select id="modalSizeSelect"><option>1/8 Liter</option><option>1/4 Liter</option><option>1 Liter</option><option>1 Gallon</option></select></div>
+          <div class="color-container"><strong>COLOR:</strong> <span id="modalColor"></span> <span class="color-swatch" id="modalColorSwatch"></span></div>
+        </div>
+      </div>
+
+      <!-- PVC-specific fields -->
+      <div class="pvc-fields">
+        <h3 class="specification-title">Specification</h3>
+        <div class="specification-item"><strong>MATERIAL:</strong> <span id="modalMaterial"></span></div>
+<div class="size-container"><strong>SIZE:</strong><select id="modalPvcSizeSelect"><option>1/2 inch</option><option>3/4 inch</option><option>1 inch</option>
+  </select>
+</div>
+      </div>
+      <!-- Bulb-specific fields -->
+<div class="bulb-fields" style="display:none;">
+  <h3 class="specification-title">Specification</h3>
+  <div class="specification-item"><strong>WATTAGE:</strong> <span id="modalBulbWatts"></span></div>
+  <div class="specification-item"><strong>TYPE:</strong> <span id="modalBulbType"></span></div>
+</div>
+      <!-- Common fields -->
+      <div>
+        <h3 class="description-title">Description</h3>
+        <p class="description-text" id="modalDescription"></p>
+      </div>
+
+      <div class="price-stock-container">
+        <div class="price" id="modalPrice"></div>
+        <div class="stock" id="modalStock"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="productscript.js"></script>
+<script src="search-filter.js"></script>
+
+</body>
+</html>
+  </html>

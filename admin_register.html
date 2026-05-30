@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Admin Register</title>
+  <link rel="stylesheet" href="admin_register.css" />
+</head>
+<body>
+
+  <div class="register-container">
+    <h2>Admin Register</h2>
+
+    <div class="error-message" id="errorContainer"></div>
+    <div class="success-message" id="successContainer"></div>
+
+    <form id="adminRegisterForm" method="POST" action="process_register.php">
+      <div class="form-group">
+        <input type="text" name="first_name" required placeholder="First Name" />
+      </div>
+      <div class="form-group">
+        <input type="text" name="last_name" required placeholder="Last Name" />
+      </div>
+      <div class="form-group">
+        <input type="email" name="email" required placeholder="Email" />
+      </div>
+      <div class="form-group">
+        <input type="password" name="password" required placeholder="Password" />
+      </div>
+      <button id="register-submit-btn" type="submit">REGISTER</button>
+    </form>
+  </div>
+
+</body>
+</html>
